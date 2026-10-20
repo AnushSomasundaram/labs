@@ -21,7 +21,7 @@ Get an API key at [app.meetstream.ai](https://app.meetstream.ai/api-key). Node 1
 | Record a meeting and get a transcript and AI summary afterwards | [post-call-transcription](./post-call-transcription), [ai-meeting-summary](./ai-meeting-summary), [ai-meeting-notetaker-email](./ai-meeting-notetaker-email) |
 | Live transcription, captions or audio while the meeting is running | [realtime-transcription](./realtime-transcription), [live-captions-overlay](./live-captions-overlay), [realtime-audio-streaming](./realtime-audio-streaming) |
 | A bot on every calendar meeting automatically | [calendar-auto-schedule](./calendar-auto-schedule), [google-calendar-integration](./google-calendar-integration), [outlook-calendar-integration](./outlook-calendar-integration) |
-| An AI voice agent that listens and talks in the call | [MIA-chat-agent](./MIA-chat-agent), [mia-voice-agent-pipeline](./mia-voice-agent-pipeline), [mia-wake-word-assistant](./mia-wake-word-assistant) |
+| An AI voice agent that listens and talks in the call | [MIA-chat-agent](./MIA-chat-agent), [mia-voice-agent-pipeline](./mia-voice-agent-pipeline), [mia-grok-agent](./mia-grok-agent), [mia-wake-word-assistant](./mia-wake-word-assistant) |
 | Push meeting notes into HubSpot, Slack or Notion | [crm-hubspot-sync](./crm-hubspot-sync), [slack-meeting-summary](./slack-meeting-summary), [notion-meeting-notes](./notion-meeting-notes) |
 | Production-grade webhooks, retries and idempotency | [webhook-handler-complete](./webhook-handler-complete), [error-handling-and-retries](./error-handling-and-retries), [idempotency-and-dedup](./idempotency-and-dedup) |
 | Signed-in bots for locked-down Google Meet, Teams or Zoom meetings | [google-signed-in-bots-setup](./google-signed-in-bots-setup), [teams-signed-in-bots-setup](./teams-signed-in-bots-setup), [zoom-authenticated-joins](./zoom-authenticated-joins) |
@@ -109,6 +109,7 @@ MIA agents run on MeetStream's own hosted bridge. Attach one by passing **only**
 | [MIA-chat-agent](./MIA-chat-agent) | Deploy a MIA into a meeting and watch it respond |
 | [mia-voice-agent-pipeline](./mia-voice-agent-pipeline) | Pipeline mode: swap STT, LLM and TTS layers independently |
 | [mia-realtime-agent](./mia-realtime-agent) | Realtime mode: a single speech-to-speech model, lower latency |
+| [mia-grok-agent](./mia-grok-agent) | Realtime mode with Grok (xAI) as the model, plus a check of the recording |
 | [mia-agent-crud](./mia-agent-crud) | Admin CLI for saved agent configs |
 | [mia-wake-word-assistant](./mia-wake-word-assistant) | Only answers when addressed: "hey acme, ..." |
 
